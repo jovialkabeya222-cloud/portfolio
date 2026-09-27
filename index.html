@@ -1,0 +1,1546 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <!-- =====================================================
+         CONFIGURATION DE LA PAGE
+    ====================================================== -->
+
+    <meta charset="UTF-8">
+
+    <!-- Adaptation aux téléphones, tablettes et ordinateurs -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Titre de l'onglet -->
+    <title>Kabeya Tshimanga Jovial | Portfolio</title>
+
+
+    <!-- =====================================================
+         POLICE D'ÉCRITURE
+    ====================================================== -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+
+    <!-- =====================================================
+         ICÔNES
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+    <!-- =====================================================
+         FICHIER CSS
+    ====================================================== -->
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         ARRIÈRE-PLAN DÉCORATIF
+    ====================================================== -->
+
+    <div class="background-glow glow-one"></div>
+
+    <div class="background-glow glow-two"></div>
+
+
+    <!-- =====================================================
+         CONTENU PRINCIPAL
+    ====================================================== -->
+
+    <main class="site-container">
+
+
+        <!-- =================================================
+             PAGE 1 — ACCUEIL
+        ================================================== -->
+
+        <section id="accueil" class="page active">
+
+
+            <!-- En-tête de bienvenue -->
+
+            <div class="hero-section">
+
+
+                <!-- Petit badge -->
+
+                <div class="welcome-badge">
+
+                    <span class="status-dot"></span>
+
+                    Bienvenue sur mon portfolio
+
+                </div>
+
+
+                <!-- Présentation -->
+
+                <h1>
+
+                    Kabeya Tshimanga
+
+                    <span>Jovial</span>
+
+                </h1>
+
+
+                <p class="hero-subtitle">
+
+                    Étudiant en informatique, curieux et intéressé par
+                    les technologies numériques, je construis progressivement
+                    mon parcours à travers ma formation, mes expériences
+                    et mes différents projets.
+
+                </p>
+
+
+                <!-- Boutons -->
+
+                <div class="hero-buttons">
+
+
+                    <!-- Aller au profil -->
+
+                    <button
+                        class="primary-button"
+                        onclick="showPage('profil')">
+
+                        <i class="fa-solid fa-user"></i>
+
+                        Découvrir mon profil
+
+                    </button>
+
+
+                    <!-- Aller aux projets -->
+
+                    <button
+                        class="secondary-button"
+                        onclick="showPage('projets')">
+
+                        <i class="fa-solid fa-code"></i>
+
+                        Voir mes projets
+
+                    </button>
+
+                </div>
+
+
+                <!-- =================================================
+                     BOUTON MOTIVATION
+                ================================================== -->
+
+                <button
+                    class="motivation-button"
+                    onclick="toggleMotivation()">
+
+                    <span>
+
+                        <i class="fa-solid fa-quote-left"></i>
+
+                        Ma motivation
+
+                    </span>
+
+                    <i
+                        id="motivation-arrow"
+                        class="fa-solid fa-chevron-down">
+                    </i>
+
+                </button>
+
+
+                <!-- =================================================
+                     TEXTE DE MOTIVATION
+                ================================================== -->
+
+                <div
+                    id="motivation-content"
+                    class="motivation-content">
+
+                    <p>
+
+                        Je souhaite développer progressivement mes connaissances
+                        dans le domaine de l'informatique et acquérir une
+                        expérience concrète à travers mes projets et mes
+                        différentes activités.
+
+                    </p>
+
+                    <p>
+
+                        Mon objectif est de continuer à apprendre, de renforcer
+                        mes compétences et de construire un parcours qui me
+                        permettra de participer à la création de solutions
+                        numériques utiles et adaptées aux besoins réels.
+
+                    </p>
+
+                </div>
+
+
+                <!-- Petite indication -->
+
+                <div class="hero-scroll">
+
+                    <i class="fa-solid fa-arrow-down"></i>
+
+                    Explorez mon parcours
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =================================================
+             PAGE 2 — PROFIL
+        ================================================== -->
+
+        <section id="profil" class="page">
+
+
+            <div class="page-heading">
+
+                <span class="section-label">
+                    MON PROFIL
+                </span>
+
+                <h2>
+
+                    Mon parcours en
+                    <span>quelques étapes</span>
+
+                </h2>
+
+                <p>
+
+                    Découvrez les différentes parties de mon portfolio
+                    et accédez rapidement aux informations qui présentent
+                    mon parcours.
+
+                </p>
+
+            </div>
+
+
+            <!-- =================================================
+                 TABLE DES MATIÈRES
+            ================================================== -->
+
+            <div class="profile-grid">
+
+
+                <!-- Profil -->
+
+                <div
+                    class="profile-card"
+                    onclick="showPage('profil')">
+
+                    <div class="card-icon">
+
+                        <i class="fa-solid fa-user"></i>
+
+                    </div>
+
+                    <div>
+
+                        <h3>Profil</h3>
+
+                        <p>
+                            Présentation de mon parcours.
+                        </p>
+
+                    </div>
+
+                    <i class="fa-solid fa-arrow-right card-arrow"></i>
+
+                </div>
+
+
+                <!-- CV -->
+
+                <div
+                    class="profile-card"
+                    onclick="showPage('cv')">
+
+                    <div class="card-icon">
+
+                        <i class="fa-solid fa-file-lines"></i>
+
+                    </div>
+
+                    <div>
+
+                        <h3>Mon CV</h3>
+
+                        <p>
+                            Formation, contacts et expérience.
+                        </p>
+
+                    </div>
+
+                    <i class="fa-solid fa-arrow-right card-arrow"></i>
+
+                </div>
+
+
+                <!-- Projets -->
+
+                <div
+                    class="profile-card"
+                    onclick="showPage('projets')">
+
+                    <div class="card-icon">
+
+                        <i class="fa-solid fa-code"></i>
+
+                    </div>
+
+                    <div>
+
+                        <h3>Mes projets</h3>
+
+                        <p>
+                            Projets académiques et personnels.
+                        </p>
+
+                    </div>
+
+                    <i class="fa-solid fa-arrow-right card-arrow"></i>
+
+                </div>
+
+
+                <!-- Motivation -->
+
+                <div
+                    class="profile-card"
+                    onclick="showPage('accueil'); setTimeout(toggleMotivation, 200)">
+
+                    <div class="card-icon">
+
+                        <i class="fa-solid fa-lightbulb"></i>
+
+                    </div>
+
+                    <div>
+
+                        <h3>Ma motivation</h3>
+
+                        <p>
+                            Mes objectifs et ma vision.
+                        </p>
+
+                    </div>
+
+                    <i class="fa-solid fa-arrow-right card-arrow"></i>
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =================================================
+             PAGE 3 — CV
+        ================================================== -->
+
+        <section id="cv" class="page">
+
+
+            <div class="page-heading">
+
+                <span class="section-label">
+                    CURRICULUM VITAE
+                </span>
+
+                <h2>
+
+                    Mon parcours
+                    <span>professionnel</span>
+
+                </h2>
+
+                <p>
+
+                    Retrouvez ici les principales informations
+                    concernant mon parcours, ma formation et mes
+                    compétences.
+
+                </p>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 BLOC — PRÉSENTATION
+            ================================================== -->
+
+            <div class="cv-card profile-description-card">
+
+
+                <div class="cv-card-title">
+
+                    <div class="card-icon">
+
+                        <i class="fa-solid fa-user"></i>
+
+                    </div>
+
+                    <h3>Profil</h3>
+
+                </div>
+
+
+                <!-- =================================================
+                     TON PROFIL — TU PEUX MODIFIER CE TEXTE
+                ================================================== -->
+
+                <p>
+
+                    Je suis étudiant en informatique, actuellement
+                    en parcours de formation universitaire. Je m'intéresse
+                    aux technologies numériques et je cherche à développer
+                    progressivement mes connaissances à travers ma formation,
+                    mes projets et mes expériences.
+
+                </p>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 CONTACTS
+            ================================================== -->
+
+            <div class="cv-card">
+
+
+                <div class="cv-card-title">
+
+                    <div class="card-icon">
+
+                        <i class="fa-solid fa-address-card"></i>
+
+                    </div>
+
+                    <h3>Contacts</h3>
+
+                </div>
+
+
+                <div class="contact-grid">
+
+
+                    <!-- Adresse -->
+
+                    <div class="contact-item">
+
+                        <i class="fa-solid fa-location-dot"></i>
+
+                        <div>
+
+                            <span>Adresse</span>
+
+                            <!-- REMPLACE ICI -->
+
+                            <strong>
+                                Landi 11, bianda, mont-ngafula
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Email -->
+
+                    <div class="contact-item">
+
+                        <i class="fa-solid fa-envelope"></i>
+
+                        <div>
+
+                            <span>Email</span>
+
+                            <!-- REMPLACE ICI -->
+
+                            <strong>
+                                jovialkabeya222@email.com
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Téléphone -->
+
+                    <div class="contact-item">
+
+                        <i class="fa-solid fa-phone"></i>
+
+                        <div>
+
+                            <span>Téléphone</span>
+
+                            <!-- REMPLACE ICI -->
+
+                            <strong>
+                                +243 995426729
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Âge -->
+
+                    <div class="contact-item">
+
+                        <i class="fa-solid fa-calendar"></i>
+
+                        <div>
+
+                            <span>Âge</span>
+
+                            <!-- REMPLACE ICI -->
+
+                            <strong>
+                                20 ans
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 FORMATION
+            ================================================== -->
+
+            <div class="cv-card">
+
+
+                <div class="cv-card-title">
+
+                    <div class="card-icon">
+
+                        <i class="fa-solid fa-graduation-cap"></i>
+
+                    </div>
+
+                    <h3>Formation</h3>
+
+                </div>
+
+
+                <div class="timeline">
+
+
+                    <!-- FORMATION 1 -->
+
+                    <div class="timeline-item">
+
+                        <span class="timeline-date">
+                            2025 — 2026 Licence 2 (en cours)
+                        </span>
+
+                        <h4>
+                            Leadership Academia University
+                        </h4>
+
+                        <p>
+                            Formation en informatique —
+                            parcours CTI / FASI 
+                        </p>
+
+                    </div>
+
+                     <!-- FORMATION 1 -->
+
+                    <div class="timeline-item">
+
+                        <span class="timeline-date">
+                            2024 — 2025 Licence 1
+                        </span>
+
+                        <h4>
+                            Leadership Academia University
+                        </h4>
+
+                        <p>
+                            Formation en informatique —
+                            parcours CTI / FASI 
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- FORMATION 2 -->
+
+                    <div class="timeline-item">
+
+                        <span class="timeline-date">
+                            2022 — 2023
+                        </span>
+
+                        <h4>
+                            Complexe Scolaire Betyna
+                        </h4>
+
+                        <p>
+                            Diplôme d'État — Option Sciences.
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 LANGUES
+            ================================================== -->
+
+            <div class="cv-card">
+
+
+                <div class="cv-card-title">
+
+                    <div class="card-icon">
+
+                        <i class="fa-solid fa-language"></i>
+
+                    </div>
+
+                    <h3>Langues</h3>
+
+                </div>
+
+
+                <div class="languages-grid">
+
+
+                    <div class="language-item">
+
+                        <div>
+
+                            <strong>Français</strong>
+
+                            <span>Courant</span>
+
+                        </div>
+
+                        <div class="language-bar">
+
+                            <span style="width: 90%;"></span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="language-item">
+
+                        <div>
+
+                            <strong>Anglais</strong>
+
+                            <span>Débutant</span>
+
+                        </div>
+
+                        <div class="language-bar">
+
+                            <span style="width: 35%;"></span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="language-item">
+
+                        <div>
+
+                            <strong>Swahili</strong>
+
+                            <span>Langue maternelle</span>
+
+                        </div>
+
+                        <div class="language-bar">
+
+                            <span style="width: 60%;"></span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="language-item">
+
+                        <div>
+
+                            <strong>Lingala</strong>
+
+                            <span>Courant</span>
+
+                        </div>
+
+                        <div class="language-bar">
+
+                            <span style="width: 80%;"></span>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 EXPÉRIENCE PROFESSIONNELLE
+            ================================================== -->
+
+            <div class="cv-card">
+
+
+                <div class="cv-card-title">
+
+                    <div class="card-icon">
+
+                        <i class="fa-solid fa-briefcase"></i>
+
+                    </div>
+
+                    <h3>Expériences professionnelles</h3>
+
+                </div>
+
+
+                <div class="experience-card">
+
+
+                    <div class="experience-top">
+
+                        <div>
+
+                            <h4>
+                                Directeur des opérations
+                            </h4>
+
+                            <span class="company-name">
+                                CongoEvent
+                            </span>
+
+                        </div>
+
+
+                        <span class="experience-date">
+                            2024 — Aujourd'hui
+                        </span>
+
+                    </div>
+
+
+                    <p>
+
+                        Participation à l'organisation, à la coordination
+                        et au suivi opérationnel des activités et événements,
+                         gestion des equipes des scanneurs pour les billets physique et numériques.
+
+                    </p>
+
+
+                    <!-- =================================================
+                         LIENS VERS LES VIDÉOS
+                         
+                         REMPLACE LES "#" PAR TES VRAIS LIENS
+                    ================================================== -->
+
+                    <div class="video-links">
+
+
+                        <a href="https://www.instagram.com/reel/DbA2qXtoaZl/?stkn=YTA5eTMxMGM0ZjFp" target="_blank">
+
+                            <i class="fa-brands fa-youtube"></i>
+
+                            Travail vidéo 01
+
+                        </a>
+
+
+                        <a href="https://www.instagram.com/reel/DZaprKJoi89/?stkn=MXVja2JmZ2FmOXh4bQ==" target="_blank">
+
+                            <i class="fa-brands fa-youtube"></i>
+
+                            Travail vidéo 02
+
+                        </a>
+
+
+                        <a href="https://www.instagram.com/reel/DSN7uqaiF8x/?stkn=azFxMXBpMTZvejcw" target="_blank">
+
+                            <i class="fa-brands fa-youtube"></i>
+
+                            Travail vidéo 03
+
+                        </a>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 COMPÉTENCES
+            ================================================== -->
+
+            <div class="cv-card">
+
+
+                <div class="cv-card-title">
+
+                    <div class="card-icon">
+
+                        <i class="fa-solid fa-layer-group"></i>
+
+                    </div>
+
+                    <h3>Compétences</h3>
+
+                </div>
+
+
+                <div class="competence-columns">
+
+
+                    <!-- COMPÉTENCES PROFESSIONNELLES -->
+
+                    <div class="competence-box">
+
+                        <h4>
+
+                            <i class="fa-solid fa-laptop-code"></i>
+
+                            Compétences professionnelles
+
+                        </h4>
+
+
+                        <ul>
+
+                            <li>HTML / CSS — notions</li>
+
+                            <li>Notions en bases de données Acces</li>
+
+                            <li>Utilisation d'outils informatiques ( vscode,netbeans )</li>
+
+                            <li>Organisation de projets</li>
+
+                            <li>Coordination d'activités</li>
+
+                        </ul>
+
+                    </div>
+
+
+                    <!-- COMPÉTENCES PERSONNELLES -->
+
+                    <div class="competence-box">
+
+                        <h4>
+
+                            <i class="fa-solid fa-user-check"></i>
+
+                            Compétences personnelles
+
+                        </h4>
+
+
+                        <ul>
+
+                            <li>Organisation</li>
+
+                            <li>Esprit d'équipe</li>
+
+                            <li>Adaptabilité</li>
+
+                            <li>Responsabilité</li>
+
+                            <li>Volonté d'apprendre</li>
+
+                        </ul>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 ACTIVITÉS
+            ================================================== -->
+
+            <div class="cv-card">
+
+
+                <div class="cv-card-title">
+
+                    <div class="card-icon">
+
+                        <i class="fa-solid fa-star"></i>
+
+                    </div>
+
+                    <h3>Activités</h3>
+
+                </div>
+
+
+                <!-- =================================================
+                     TU PEUX ÉCRIRE TES ACTIVITÉS ICI
+                ================================================== -->
+
+                <div class="activities-list">
+
+
+                    <div class="activity-item">
+
+                        <i class="fa-solid fa-drum"></i>
+
+                        <span>
+                            Batteur
+                        </span>
+
+                    </div>
+
+
+                    <div class="activity-item">
+
+                        <i class="fa-solid fa-users"></i>
+
+                        <span>
+                            Vice-délégué de classe
+                        </span>
+
+                    </div>
+
+
+                    <div class="activity-item">
+
+                        <i class="fa-solid fa-microphone-lines"></i>
+
+                        <span>
+                            Responsable de la technique dans une église
+                        </span>
+
+                    </div>
+
+
+                    <!-- AJOUTER D'AUTRES ACTIVITÉS ICI -->
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 CENTRES D'INTÉRÊT
+            ================================================== -->
+
+            <div class="cv-card">
+
+
+                <div class="cv-card-title">
+
+                    <div class="card-icon">
+
+                        <i class="fa-solid fa-heart"></i>
+
+                    </div>
+
+                    <h3>Centres d'intérêt</h3>
+
+                </div>
+
+
+                <div class="interest-grid">
+
+
+                    <div class="interest-item">
+
+                        <i class="fa-solid fa-laptop"></i>
+
+                        <span>
+                            Informatique
+                        </span>
+
+                    </div>
+
+
+                    <div class="interest-item">
+
+                        <i class="fa-solid fa-music"></i>
+
+                        <span>
+                            Musique
+                        </span>
+
+                    </div>
+
+
+                    <div class="interest-item">
+
+                        <i class="fa-solid fa-lightbulb"></i>
+
+                        <span>
+                            Technologies
+                        </span>
+
+                    </div>
+
+
+                    <div class="interest-item">
+
+                        <i class="fa-solid fa-users"></i>
+
+                        <span>
+                            Activités collectives
+                        </span>
+
+                    </div>
+
+
+                    <!-- AJOUTER TES CENTRES D'INTÉRÊT ICI -->
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 ESPACE POUR COLLER UN CV TEXTE COMPLET
+            ================================================== -->
+
+            <div class="cv-card">
+
+
+                <div class="cv-card-title">
+
+                    <div class="card-icon">
+
+                        <i class="fa-solid fa-file-lines"></i>
+
+                    </div>
+
+                    <h3>CV détaillé</h3>
+
+                </div>
+
+
+                <!-- =================================================
+                     COLLE TON CV EN TEXTE ICI
+                ================================================== -->
+
+                <div class="cv-text-area">
+
+                    <p>
+                       
+
+
+Étudiant en informatique à Leadership Academia University, actuellement au terme de ma deuxième année de licence. Mon parcours m’a permis d’aborder différents aspects de l’informatique à travers des travaux pratiques et des projets académiques, notamment autour du web et des bases de données.
+
+Je préfère apprendre en partant de situations concrètes : comprendre un besoin, chercher une manière de le traiter, puis construire progressivement une solution. Mes projets universitaires m’ont notamment amené à travailler sur des systèmes de gestion liés à une pharmacie, une bibliothèque et un supermarché.
+
+En parallèle de mes études, mon expérience au sein de CongoEvent m’a placé dans un environnement où l'organisation, le suivi des activités et la coordination occupent une place importante. Cette expérience constitue un complément à ma formation informatique et m'a permis de développer une approche plus concrète du travail en équipe et de la gestion d'activités.
+
+Je m'intéresse particulièrement aux usages pratiques de l'informatique et à la manière dont les outils numériques peuvent simplifier certaines tâches. Je souhaite continuer à construire mon parcours en développant mes connaissances et en multipliant les réalisations concrètes.
+
+Je construis mon parcours entre informatique, 
+réalisations concrètes et expériences de terrain,
+ avec l'envie de transformer progressivement ce que j'apprends 
+ en quelque chose d'utile. 
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =================================================
+             PAGE 4 — PROJETS
+        ================================================== -->
+
+        <section id="projets" class="page">
+
+
+            <div class="page-heading">
+
+                <span class="section-label">
+                    MES RÉALISATIONS
+                </span>
+
+                <h2>
+
+                    Mes
+                    <span>projets</span>
+
+                </h2>
+
+                <p>
+
+                    Découvrez une sélection de projets réalisés
+                    dans le cadre de ma formation et de mes activités
+                    personnelles.
+
+                </p>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 PROJETS ACADÉMIQUES
+            ================================================== -->
+
+            <div class="project-section">
+
+
+                <div class="project-section-title">
+
+                    <i class="fa-solid fa-graduation-cap"></i>
+
+                    <h3>
+                        Projets académiques
+                    </h3>
+
+                </div>
+
+
+                <div class="projects-grid">
+
+
+                    <!-- PROJET ACADÉMIQUE 1 -->
+
+                    <article class="project-card">
+
+                        <div class="project-image">
+
+                            <img
+                                src="images/Capture d’écran (58).png"
+                                alt="Projet académique 1">
+
+                        </div>
+
+                        <div class="project-content">
+
+                            <!-- MODIFIER LE TITRE -->
+
+                            <h3>
+                                Identifiquation du personnel dans une entreprise
+                            </h3>
+
+                            <p>
+                                Présentation :
+                                 une interface permettant au 
+                                 Rh de pouvoir identifier le personnel
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- PROJET ACADÉMIQUE 2 -->
+
+                    <article class="project-card">
+
+                        <div class="project-image">
+
+                            <img
+                                src="images/1.png"
+                                alt="Projet académique 2">
+
+                        </div>
+
+                        <div class="project-content">
+
+                            <h3>
+                                interface capable de saisir les produits dans une boutique
+                            </h3>
+
+                            <p>
+                                Présentation : les produits sont saisis et stocker dans une BDD
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- PROJET ACADÉMIQUE 3 -->
+
+                    <article class="project-card">
+
+                        <div class="project-image">
+
+                            <img
+                                src="images/Capture d’écran (60).png"
+                                alt="Projet académique 3">
+
+                        </div>
+
+                        <div class="project-content">
+
+                            <h3>
+                                Saisie du personnel
+                            </h3>
+
+                            <p>
+                                Présentation : interface capable d'enregistrer le personnel dans une entreprise
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- PROJET ACADÉMIQUE 4 -->
+
+                    <article class="project-card">
+
+                        <div class="project-image">
+
+                            <img
+                                src="images/Capture d’écran (57).png"
+                                alt="Projet académique 4">
+
+                        </div>
+
+                        <div class="project-content">
+
+                            <h3>
+                                Menu d'authentification 
+                            </h3>
+
+                            <p>
+                                Présentation : un Menu capable d'authentifier les utilisateur dans une entreprise
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                     <!-- PROJET ACADÉMIQUE 5 -->
+
+                    <article class="project-card">
+
+                        <div class="project-image">
+
+                            <img
+                                src="images/3.png"
+                                alt="Projet académique 3">
+
+                        </div>
+
+                        <div class="project-content">
+
+                            <h3>
+                                Application de gestion de billets
+                            </h3>
+
+                            <p>
+                                Présentation : une BDD Acces capables de gerer la billetterie d'un evenement 
+                            </p>
+
+                        </div>
+
+                    </article>
+                     <!-- PROJET ACADÉMIQUE 6 -->
+
+                    <article class="project-card">
+
+                        <div class="project-image">
+
+                            <img
+                                src="images/4.png"
+                                alt="Projet académique 3">
+
+                        </div>
+
+                        <div class="project-content">
+
+                            <h3>
+                                Application de gestion des etudiants 
+                            </h3>
+
+                            <p>
+                                Présentation : une BDD Acces capables de gerer les etudiants dans un etablissement
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+
+
+
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 PROJETS PERSONNELS
+            ================================================== -->
+
+            <div class="project-section">
+
+
+                <div class="project-section-title">
+
+                    <i class="fa-solid fa-lightbulb"></i>
+
+                    <h3>
+                        Projets personnels
+                    </h3>
+
+                </div>
+
+
+                <div class="projects-grid">
+
+
+                    <!-- PROJET PERSONNEL 1 -->
+
+                    <article class="project-card">
+
+                        <div class="project-image">
+
+                            <img
+                                src="images/Capture d’écran (63).png"
+                                alt="Projet personnel 1">
+
+                        </div>
+
+                        <div class="project-content">
+
+                            <h3>
+                                Un site web pour une agence de location automobile
+                            </h3>
+
+                            <p>
+                                Présentation : le site permet aux utilisateurs de voir les vehicules , verifier les tarifs et resever un vehicule pour une periode definie
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- PROJET PERSONNEL 2 -->
+
+                    <article class="project-card">
+
+                        <div class="project-image">
+
+                            <img
+                                src="images/Capture d’écran (64).png"
+                                alt="Projet personnel 2">
+
+                        </div>
+
+                        <div class="project-content">
+
+                            <h3>
+                                site de bookingrdc
+                            </h3>
+
+                            <p>
+                                Présentation : un site permetant aux locaux et autres personnes de decouvrir la beaute de la rdc
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- PROJET PERSONNEL 3 -->
+
+                    <article class="project-card">
+
+                        <div class="project-image">
+
+                            <img
+                                src="images/Capture d’écran (65).png"
+                                alt="Projet personnel 3">
+
+                        </div>
+
+                        <div class="project-content">
+
+                            <h3>
+                                    jovial's pizza
+                            </h3>
+
+                            <p>
+                                Présentation : une petite pizzeria local aux couleurs de la rdc
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =====================================================
+         NAVIGATION FIXE EN BAS
+    ====================================================== -->
+
+    <nav class="bottom-navigation">
+
+
+        <!-- ACCUEIL -->
+
+        <button
+            class="nav-button active-nav"
+            onclick="showPage('accueil')">
+
+            <i class="fa-solid fa-house"></i>
+
+            <span>Accueil</span>
+
+        </button>
+
+
+        <!-- PROFIL -->
+
+        <button
+            class="nav-button"
+            onclick="showPage('profil')">
+
+            <i class="fa-solid fa-user"></i>
+
+            <span>Profil</span>
+
+        </button>
+
+
+        <!-- CV -->
+
+        <button
+            class="nav-button"
+            onclick="showPage('cv')">
+
+            <i class="fa-solid fa-file-lines"></i>
+
+            <span>CV</span>
+
+        </button>
+
+
+        <!-- PROJETS -->
+
+        <button
+            class="nav-button"
+            onclick="showPage('projets')">
+
+            <i class="fa-solid fa-code"></i>
+
+            <span>Projets</span>
+
+        </button>
+
+
+    </nav>
+
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
